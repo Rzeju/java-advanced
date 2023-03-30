@@ -31,6 +31,10 @@ public class Main {
         objectSortedSet.add(new MyObject("a", 10));
         objectSortedSet.add(new MyObject("Tadeusz", -50));
 
+
+//        objectSortedSet.first().setName("b");
+//        objectSortedSet.first().setNumber(100);
+
         objectSortedSet.forEach(System.out::println);
 
         Comparator<MyObject> nameFieldComparator = new Comparator<MyObject>() {
