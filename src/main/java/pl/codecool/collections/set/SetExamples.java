@@ -41,6 +41,7 @@ public class SetExamples {
         linkedSet.add(7);
         linkedSet.add(-100);
         linkedSet.add(20);
+        linkedSet.add(1);
         linkedSet.forEach(System.out::println);
 
 
