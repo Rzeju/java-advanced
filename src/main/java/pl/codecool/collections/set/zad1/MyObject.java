@@ -10,6 +10,7 @@ import lombok.*;
 public class MyObject implements Comparable<MyObject> {
 
     private String name;
+    private Integer number;
 
     @Override
     public int compareTo(MyObject o) {
