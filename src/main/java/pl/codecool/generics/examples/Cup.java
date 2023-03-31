@@ -1,6 +1,6 @@
 package pl.codecool.generics.examples;
 
-public class Cup<T> {
+public class Cup<T extends Liquid> {
 
     private T liquid;
 
@@ -8,10 +8,8 @@ public class Cup<T> {
         this.liquid = liquid;
     }
 
-    public <T> void fillCup(T liquid) {
-        System.out.println(liquid.getClass().getName());
-        System.out.println(this.liquid.getClass().getName());
-        //this.liquid = liquid;
+    public <E extends Liquid> Cup<E> fillCup(E liquid) {
+        return new Cup<>(liquid);
     }
 
     public T getLiquid() {
