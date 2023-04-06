@@ -10,5 +10,14 @@ public class Main {
 
 
         Cup<Coffee> coffee = stringCup.fillCup(new Coffee());
+        System.out.println(coffee.getLiquid());
+
+
+        System.out.println("Liquid Cup");
+        Cup<Liquid> liquidCup = new Cup<>(new Tea());
+        System.out.println(liquidCup.getLiquid());
+
+        liquidCup.fillTheSameCup(new Coffee());
+        System.out.println(liquidCup.getLiquid());
     }
 }

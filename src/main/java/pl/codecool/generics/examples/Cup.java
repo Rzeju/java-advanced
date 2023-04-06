@@ -8,8 +8,13 @@ public class Cup<T extends Liquid> {
         this.liquid = liquid;
     }
 
-    public <E extends Liquid> Cup<E> fillCup(E liquid) {
+    public <T extends Liquid> Cup<T> fillCup(T liquid) {
         return new Cup<>(liquid);
+    }
+
+    public Cup<T> fillTheSameCup(T liquid) {
+        this.liquid = liquid;
+        return this;
     }
 
     public T getLiquid() {
