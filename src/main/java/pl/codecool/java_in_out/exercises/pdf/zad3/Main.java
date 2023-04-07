@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static void addLine(String nextLine) throws IOException {
-        String fileName = "src/main/resources/pdf/zad3/zad3_file.txt";
+        String fileName = "src/main/resources/exercises/pdf/zad3/zad3_file.txt";
         FileWriter fileWriter = new FileWriter(fileName, true);
         fileWriter.write(System.lineSeparator());
         fileWriter.write(nextLine);

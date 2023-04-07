@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static String longestWordScanner() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("src/main/resources/pdf/zad4/zad4_file.txt"));
+        Scanner scanner = new Scanner(new File("src/main/resources/exercises/pdf/zad4/zad4_file.txt"));
         String longestWord = "";
         String currentWord;
 
@@ -27,7 +27,7 @@ public class Main {
     }
 
     public static String longestWordReader() throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("src/main/resources/pdf/zad4/zad4_file.txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("src/main/resources/exercises/pdf/zad4/zad4_file.txt"));
 
         String line;
         String longest = "";

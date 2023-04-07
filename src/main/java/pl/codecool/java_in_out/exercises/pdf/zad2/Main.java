@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        FileReader fileReader = new FileReader("src/main/resources/buffered_reader_writer/buffered_example_file.txt");
+        FileReader fileReader = new FileReader("src/main/resources/exercises/pdf/zad2/zad2_file.txt");
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         String nextLine;

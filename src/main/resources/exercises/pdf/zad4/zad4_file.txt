@@ -1,0 +1,5 @@
+Hello, word
+Two knights
+Long words
+TheLongestWord!
+No words, hello!
