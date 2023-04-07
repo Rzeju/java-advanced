@@ -1,7 +1,6 @@
-package pl.codecool.java_in_out;
+package pl.codecool.java_in_out.input_output_stream;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
