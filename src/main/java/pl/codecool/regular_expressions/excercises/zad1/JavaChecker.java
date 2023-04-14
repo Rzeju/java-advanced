@@ -21,5 +21,6 @@ public class JavaChecker {
         } else {
             System.out.println("The input does not contain the word java");
         }
+
     }
 }
