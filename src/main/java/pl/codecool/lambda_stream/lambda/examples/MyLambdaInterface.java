@@ -1,4 +1,4 @@
-package pl.codecool.lambda_stream.examples;
+package pl.codecool.lambda_stream.lambda.examples;
 
 @FunctionalInterface
 public interface MyLambdaInterface {

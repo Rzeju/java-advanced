@@ -1,4 +1,4 @@
-package pl.codecool.lambda_stream.ex1;
+package pl.codecool.lambda_stream.lambda.ex1;
 
 import java.util.Random;
 import java.util.function.*;
