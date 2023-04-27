@@ -1,4 +1,4 @@
-package pl.codecool.lambda_stream.method_reference;
+package pl.codecool.lambda_stream.method_reference.examples;
 
 import java.util.ArrayList;
 import java.util.List;
