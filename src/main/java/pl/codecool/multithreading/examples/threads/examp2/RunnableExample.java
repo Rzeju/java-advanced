@@ -1,4 +1,4 @@
-package pl.codecool.multithreading.examples.examp2;
+package pl.codecool.multithreading.examples.threads.examp2;
 
 public class RunnableExample {
 

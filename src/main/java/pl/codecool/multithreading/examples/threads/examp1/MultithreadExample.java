@@ -1,4 +1,4 @@
-package pl.codecool.multithreading.examples.examp1;
+package pl.codecool.multithreading.examples.threads.examp1;
 
 public class MultithreadExample {
 
