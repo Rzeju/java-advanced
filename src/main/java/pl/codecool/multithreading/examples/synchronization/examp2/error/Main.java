@@ -1,4 +1,4 @@
-package pl.codecool.multithreading.examples.synchronization.examp2;
+package pl.codecool.multithreading.examples.synchronization.examp2.error;
 
 public class Main {
 

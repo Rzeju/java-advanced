@@ -9,10 +9,11 @@ public class Restaurant {
     private Lock myLock = new ReentrantLock();
     private Condition isMealPrepared = myLock.newCondition();
 
-    private boolean isMealReady = true;
+    private boolean isMealReady = false;
 
     public void orderMeal() {
         myLock.lock();
+        System.out.println("After lock");
         try {
             while (!isMealReady) {
                 System.out.println(Thread.currentThread().getName() + " is waiting for meal");
@@ -33,14 +34,19 @@ public class Restaurant {
     }
 
     public void prepareMeal() {
-        System.out.println("Meal is preparing");
+        myLock.lock();
         try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Meal is preparing");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            isMealReady = true;
+            isMealPrepared.signalAll();
+        } finally {
+            myLock.unlock();
         }
-        isMealReady = true;
-        isMealPrepared.signalAll();
     }
 
 }
